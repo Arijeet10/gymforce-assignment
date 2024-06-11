@@ -21,12 +21,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 import { SetStateAction } from "react";
 
-const Navbar = ({sidebar,setSidebar}:{sidebar?:boolean,setSidebar?:React.Dispatch<SetStateAction<boolean>>}) => {
+const Navbar = ({sidebar,setSidebar}:{sidebar:boolean,setSidebar:React.Dispatch<SetStateAction<boolean>>}) => {
   return (
     <>
       <div className="w-full flex items-center justify-between">
         <section className="hidden  sm:flex items-center gap-4">
-          <div onClick={()=>(sidebar && setSidebar && setSidebar(!sidebar))} className="p-2 rounded-full hover:bg-[#f8f8fb]">
+          <div onClick={()=>(setSidebar(!sidebar))} className="p-2 rounded-full hover:bg-[#f8f8fb]">
             <Menu />
           </div>
           <div className="p-2 flex w-full items-center gap-2 border rounded-full">
