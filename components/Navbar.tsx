@@ -25,7 +25,7 @@ const Navbar = ({sidebar,setSidebar}:{sidebar:boolean,setSidebar:React.Dispatch<
   return (
     <>
       <div className="w-full flex items-center justify-between">
-        <section className="flex items-center gap-4">
+        <section className="hidden  sm:flex items-center gap-4">
           <div onClick={()=>setSidebar(!sidebar)} className="p-2 rounded-full hover:bg-[#f8f8fb]">
             <Menu />
           </div>
@@ -59,7 +59,7 @@ const Navbar = ({sidebar,setSidebar}:{sidebar:boolean,setSidebar:React.Dispatch<
             </DropdownMenu>
           </div>
         </section>
-        <section className="flex items-center justify-between gap-4">
+        <section className="w-full sm:w-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div>
               <Image
