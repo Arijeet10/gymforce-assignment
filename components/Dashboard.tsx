@@ -46,7 +46,7 @@ const DefaultDashboard = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-h-[40vh] overflow-scroll">
           <TableChart />
         </div>
       </div>
