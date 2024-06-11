@@ -18,7 +18,7 @@ const DefaultDashboard = () => {
         {/* /Header */}
 
         <div className="grid sm:grid-cols-12 gap-4">
-          <div className="sm:col-span-4 flex flex-col gap-4">
+          <div className="sm:col-span-6 lg:col-span-4 flex flex-col gap-4">
             <div>
               <ProfileCard />
             </div>
@@ -26,7 +26,7 @@ const DefaultDashboard = () => {
               <MonthlyEarningCard />
             </div>
           </div>
-          <div className="sm:col-span-8 grid sm:grid-rows-12 gap-4">
+          <div className="sm:col-span-6 lg:col-span-8 grid sm:grid-rows-12 gap-4">
             <div className="sm:row-span-4 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex-1 w-full h-full">
                 <OrdersCard />
