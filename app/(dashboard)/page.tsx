@@ -11,7 +11,7 @@ import {
 import { useEffect, useState } from "react";
 
 const DashboardPage = () => {
-  const [sidebar, setSidebar] = useState<boolean>(true);
+  const [sidebar, setSidebar] = useState<boolean>(false);
 
   useEffect(() => {
     console.log(sidebar);
